@@ -29,6 +29,36 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/custom-scrollbar.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/css.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+    <script type="text/javascript">
+		<!----- JQUERY FOR SLIDING NAVIGATION --->   
+		$(document).ready(function() {
+			$('a[href*=#]').each(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+				&& location.hostname == this.hostname
+				&& this.hash.replace(/#/,'') ) {
+					var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+					var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+					 if ($target) {
+						 var targetOffset = $target.offset().top;
+		
+		<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+						 $(this).click(function() {
+								$("#nav li a").removeClass("active");
+								$(this).addClass('active');
+							 $('html, body').animate({scrollTop: targetOffset}, 6000);
+							 return false;
+						 });
+					}
+				}
+			});
+		});
+		</script>
   </head>
 
   <body>
@@ -45,8 +75,8 @@
           <a class="navbar-brand" href="#">Amit Rudra</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+          <ul id="nav" class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -54,10 +84,9 @@
       </div>
     </nav>
 
-    <div class="container">
-
+    <div class="container" id="home">
       <div class="starter-template">
-        <p class="lead">I am an innovative thinker, able to apply analysis and creativity to problem solving.</p>
+        <p class="lead">My name is Amit Rudra and I am a Front-end Developer, living in Kolkata. I'm very passionate about Web development and design.</p>
       </div>
       
       <div class="row">
@@ -136,10 +165,207 @@
         </div>
       
         <div class="col-md-1"></div>
-
       </div>
+      
+      
+      
+      <div class="container" id="portfolio">
+        <div class="starter-template">
+          <h2>Portfolio</h2>
+          <p class="lead">Lorem Ipsum e a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
       </div>
-
+      
+      <div class="container-fluid">
+        <div id="main" class="main">
+        <div id="content" class="content">
+        <div class="slider clearfix">
+        <div id="carousel">
+        <ul class="">
+        <li>
+        <figure class="category1"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i01.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>HOME</h5>
+        <p>Category 1</p>
+        <p>Purple</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category3"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i02.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 2</h5>
+        <p>Category 3</p>
+        <p>Orange</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category2"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i03.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 3</h5>
+        <p>Category2</p>
+        <p>Blue</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category1"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i04.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 4</h5>
+        <p>Category 1</p>
+        <p>Purple</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category4"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i05.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 5</h5>
+        <p>Category 4</p>
+        <p>Green</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category2"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i06.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 6</h5>
+        <p>Category 2</p>
+        <p>Blue</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category1"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i07.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 7</h5>
+        <p>Category 4</p>
+        <p>Green</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category3"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i08.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 8</h5>
+        <p>Category 3</p>
+        <p>Orange</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category2"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i09.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 9</h5>
+        <p>Category 2</p>
+        <p>Blue</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        <li>
+        <figure class="category1"> <a href="index.html">
+        <div class="clearfix"> <img src="img/i10.jpg" alt=""/> </div>
+        <figcaption>
+        <div>
+        <div>
+        <h5>IMAGE 10</h5>
+        <p>Category 1</p>
+        <p>Purple</p>
+        </div>
+        </div>
+        </figcaption>
+        </a> </figure>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="container" id="contact">
+        <div class="starter-template">
+          <h2>Contact me</h2>
+          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            <form class="form">
+              <div class="form-group">
+                <label for="exampleInputName2" class="text-left">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2" class="text-left">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputName2" class="text-left">Mobile</label>
+                <input type="text" class="form-control" id="mobile" placeholder="+91 9831346313">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputName2" class="text-left">Content</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Send</button>
+            </form>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+      </div>
+      
+      
+      
+      </div>
     </div><!-- /.container -->
 
 
@@ -151,5 +377,11 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script src="js/plugins.js" type="text/javascript"></script> 
+		<script src="js/carousel.js" type="text/javascript"></script> 
+    <script>
+        AI.init();
+    </script>
   </body>
 </html>

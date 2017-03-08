@@ -1,0 +1,188 @@
+@-webkit-keyframes shakeLeft{10%,30%,50%,70%,90%{-webkit-transform:translateX(-5px)}
+	0%,20%,40%,60%,80%,100%{-webkit-transform:translateX(0)}
+}
+@-moz-keyframes shakeLeft{10%,30%,50%,70%,90%{-moz-transform:translateX(-5px)}
+	0%,20%,40%,60%,80%,100%{-moz-transform:translateX(0)}
+}
+@-o-keyframes shakeLeft{10%,30%,50%,70%,90%{-o-transform:translateX(-5px)}
+	0%,20%,40%,60%,80%,100%{-o-transform:translateX(0)}
+}
+@keyframes shakeLeft{10%,30%,50%,70%,90%{transform:translateX(-5px)}
+	0%,20%,40%,60%,80%,100%{transform:translateX(0)}
+}
+@-webkit-keyframes shakeRight{10%,30%,50%,70%,90%{-webkit-transform:translateX(5px)}
+	0%,20%,40%,60%,80%,100%{-webkit-transform:translateX(0)}
+}
+@-moz-keyframes shakeRight{10%,30%,50%,70%,90%{-moz-transform:translateX(5px)}
+	0%,20%,40%,60%,80%,100%{-moz-transform:translateX(0)}
+}
+@-o-keyframes shakeRight{10%,30%,50%,70%,90%{-o-transform:translateX(5px)}
+	0%,20%,40%,60%,80%,100%{-o-transform:translateX(0)}
+}
+@keyframes shakeRight{10%,30%,50%,70%,90%{transform:translateX(5px)}
+	0%,20%,40%,60%,80%,100%{transform:translateX(0)}
+}
+@-webkit-keyframes lightPulse{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-moz-keyframes lightPulse{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-o-keyframes lightPulse{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@keyframes lightPulse{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-webkit-keyframes bounce{0%{top:-20px}
+	50%{top:0}
+	100%{top:-20px}
+}
+@-moz-keyframes bounce{0%{top:-20px}
+	50%{top:0}
+	100%{top:-20px}
+}
+@-o-keyframes bounce{0%{top:-20px}
+	50%{top:0}
+	100%{top:-20px}
+}
+@keyframes bounce{0%{top:-20px}
+	50%{top:0}
+	100%{top:-20px}
+}
+@-webkit-keyframes bounceShadow{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-moz-keyframes bounceShadow{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-o-keyframes bounceShadow{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@keyframes bounceShadow{0%{opacity:0.5}
+	50%{opacity:1}
+	100%{opacity:0.5}
+}
+@-webkit-keyframes radar1{0%{opacity:0}
+	40%{opacity:0}
+	50%{opacity:1}
+	60%{opacity:0}
+	100%{opacity:0}
+}
+@-moz-keyframes radar1{0%{opacity:0}
+	40%{opacity:0}
+	50%{opacity:1}
+	60%{opacity:0}
+	100%{opacity:0}
+}
+@-o-keyframes radar1{0%{opacity:0}
+	40%{opacity:0}
+	50%{opacity:1}
+	60%{opacity:0}
+	100%{opacity:0}
+}
+@keyframes radar1{0%{opacity:0}
+	40%{opacity:0}
+	50%{opacity:1}
+	60%{opacity:0}
+	100%{opacity:0}
+}
+@-webkit-keyframes radar2{0%{opacity:0}
+	40%{opacity:0}
+	60%{opacity:1}
+}
+@-moz-keyframes radar2{0%{opacity:0}
+	40%{opacity:0}
+	60%{opacity:1}
+}
+@-o-keyframes radar2{0%{opacity:0}
+	40%{opacity:0}
+	60%{opacity:1}
+}
+@keyframes radar2{0%{opacity:0}
+	40%{opacity:0}
+	60%{opacity:1}
+}
+@-webkit-keyframes radar3{0%{opacity:0}
+	50%{opacity:0}
+	70%{opacity:1}
+}
+@-moz-keyframes radar3{0%{opacity:0}
+	50%{opacity:0}
+	70%{opacity:1}
+}
+@-o-keyframes radar3{0%{opacity:0}
+	50%{opacity:0}
+	70%{opacity:1}
+}
+@keyframes radar3{0%{opacity:0}
+	50%{opacity:0}
+	70%{opacity:1}
+}
+@-webkit-keyframes radar4{0%{opacity:0}
+	60%{opacity:0}
+	80%{opacity:1}
+}
+@-moz-keyframes radar4{0%{opacity:0}
+	60%{opacity:0}
+	80%{opacity:1}
+}
+@-o-keyframes radar4{0%{opacity:0}
+	60%{opacity:0}
+	80%{opacity:1}
+}
+@keyframes radar4{0%{opacity:0}
+	60%{opacity:0}
+	80%{opacity:1}
+}
+@-webkit-keyframes radar5{0%{opacity:0}
+	70%{opacity:0}
+	90%{opacity:1}
+}
+@-moz-keyframes radar5{0%{opacity:0}
+	70%{opacity:0}
+	90%{opacity:1}
+}
+@-o-keyframes radar5{0%{opacity:0}
+	70%{opacity:0}
+	90%{opacity:1}
+}
+@keyframes radar5{0%{opacity:0}
+	70%{opacity:0}
+	90%{opacity:1}
+}
+@-webkit-keyframes paneRight{0%{margin-left:-20%}
+	100%{margin-left:40%}
+}
+@-moz-keyframes paneRight{0%{margin-left:-20%}
+	100%{margin-left:40%}
+}
+@-o-keyframes paneRight{0%{margin-left:-20%}
+	100%{margin-left:40%}
+}
+@keyframes paneRight{0%{margin-left:-20%}
+	100%{margin-left:40%}
+}
+@-webkit-keyframes paneLeft{0%{margin-left:-20%}
+	50%{margin-left:-60%}
+	100%{margin-left:-20%}
+}
+@-moz-keyframes paneLeft{0%{margin-left:-20%}
+	50%{margin-left:-60%}
+	100%{margin-left:-20%}
+}
+@-o-keyframes paneLeft{0%{margin-left:-20%}
+	50%{margin-left:-60%}
+	100%{margin-left:-20%}
+}
+@keyframes paneLeft{0%{margin-left:-20%}
+	50%{margin-left:-60%}
+	100%{margin-left:-20%}
+}
