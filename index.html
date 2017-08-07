@@ -34,6 +34,8 @@
     <link href="css/custom-scrollbar.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/css.css" rel="stylesheet" type="text/css" media="screen">
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+      
+    <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
     
     <script type="text/javascript">
 		<!----- JQUERY FOR SLIDING NAVIGATION --->   
@@ -143,7 +145,7 @@
       </div>
       
       <div class="starter-template">
-        <a href="https://drive.google.com/open?id=0ByhSjLO_uvqsVzV0M2hXWTE5bGs" target="_blank" class="btn btn-primary btn-lg">Download My Resume</a>
+        <a href="https://docs.google.com/document/d/1vGlgJrJjnClezIBtkdYSzQGWuTx369Sx28eJH_CGJPg" target="_blank" class="btn btn-primary btn-lg">Download My Resume</a>
       </div>
         
       <dig class="row">
@@ -153,7 +155,7 @@
               <dt><h3>What I do</h3></dt>
               <dd>&nbsp;</dd>
 
-              <dt>UI/UX<br/><br/></br/>(Photoshop / Illustrator)</dt>
+              <dt>UI/UX<br/>(Photoshop / Illustrator)</dt>
               <dd>Web-graphic design | Emailer design | Logo and symbolic  Art Design</dd>
 
               <dt>Front-end</dt>
@@ -424,26 +426,28 @@
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-            <form class="form">
+            <form class="form" method="POST" name="contactform" action="contact-form-handler.php"> 
               <div class="form-group">
                 <label for="exampleInputName2" class="text-left">Name</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name here">
+                <input type="text" name="name" class="form-control" id="exampleInputName2" placeholder="Enter your name here">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail2" class="text-left">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email id here">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email id here">
               </div>
               <div class="form-group">
                 <label for="exampleInputName2" class="text-left">Mobile</label>
-                <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile no here">
+                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter your mobile no here">
               </div>
               
               <div class="form-group">
                 <label for="exampleInputName2" class="text-left">Content</label>
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control"  name="message" rows="3"></textarea>
               </div>
               <button type="submit" class="btn btn-default">Send</button>
-            </form>
+            </form>            
+                
+                
             </div>
             <div class="col-md-3"></div>
           </div>
@@ -468,6 +472,17 @@
 		<script src="js/carousel.js" type="text/javascript"></script> 
     <script>
         AI.init();
+    </script>
+    
+    <script language="JavaScript">
+    // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name"); 
+    frmvalidator.addValidation("email","req","Please provide your email");
+        frmvalidator.addValidation("mobile","req","Please provide your mobile no"); 
+    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
     </script>
   </body>
 </html>
