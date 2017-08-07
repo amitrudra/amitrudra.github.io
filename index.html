@@ -369,10 +369,10 @@
                 <label for="exampleInputEmail2" class="text-left">Email</label>
                 <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email id here">
               </div>
-              <div class="form-group">
+              <!--<div class="form-group">
                 <label for="exampleInputName2" class="text-left">Mobile</label>
                 <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Enter your mobile no here">
-              </div>
+              </div>-->
               
               <div class="form-group">
                 <label for="exampleInputName2" class="text-left">Content</label>
@@ -415,7 +415,6 @@
     var frmvalidator  = new Validator("contactform");
     frmvalidator.addValidation("name","req","Please provide your name"); 
     frmvalidator.addValidation("email","req","Please provide your email");
-        frmvalidator.addValidation("mobile","req","Please provide your mobile no"); 
     frmvalidator.addValidation("email","email","Please enter a valid email address"); 
     </script>
   </body>
