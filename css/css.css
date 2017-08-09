@@ -22,7 +22,7 @@ figure{margin:0!important}
 .slider > div .mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail{display:none}
 .slider > div .mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger{max-width:40%}
 .slider > div .mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{height:10px;background:#d5355b url(../img/scroller.png) center center no-repeat;border-radius:3px}
-.slider ul{position:relative;float:left;height:136px;margin:0;padding:0;left:0;list-style-type:none;background:#000}
+.slider ul{position:relative;float:left;height:136px;margin:0;padding:0;left:0;list-style-type:none;}
 .slider li{position:relative;float:left;margin:0}
 .slider li a{position:relative;float:left;width:100%;color:#fff;overflow:hidden}
 .slider li a > div{border:solid 1px #fff;border-width:0 0 0 1px;margin:0 -1px 0 0;line-height:0;-webkit-transition:background 800ms ease-in-out;-moz-transition:background 800ms ease-in-out;-ms-transition:background 800ms ease-in-out;-o-transition:background 800ms ease-in-out;transition:background 800ms ease-in-out}
