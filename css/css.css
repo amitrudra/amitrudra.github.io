@@ -5,11 +5,11 @@ a:focus{outline:none}
 figure{margin:0!important}
 
 /* COLORS */
-.slider figcaption{position:absolute;width:100%;height:100%;background:#282828;text-align:center}
-.slider ul.category1 figcaption{background:#282828}
-.slider ul.category2 figcaption{background:#282828}
-.slider ul.category3 figcaption{background:#282828}
-.slider ul.category4 figcaption{background:#282828}
+.slider figcaption{position:absolute;width:100%;height:100%;background:#999;text-align:center}
+.slider ul.category1 figcaption{background:#999}
+.slider ul.category2 figcaption{background:#999}
+.slider ul.category3 figcaption{background:#999}
+.slider ul.category4 figcaption{background:#999}
 
 /* STYLES */
 .main{background:#fff}
