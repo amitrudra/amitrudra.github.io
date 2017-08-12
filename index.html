@@ -10,6 +10,8 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Amit Rudra | Portfolio</title>
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +34,11 @@
     
     <link href="css/normalize.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/custom-scrollbar.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/css.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
       
     <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
@@ -75,6 +81,22 @@
 	  ga('send', 'pageview');
 
 	</script>
+    
+    <div id="loading">
+        <div id="loading-center">
+                <div id="loading-center-absolute">
+                <div class="object" id="first_object"></div>
+                <div class="object" id="second_object"></div>
+                <div class="object" id="third_object"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-button">
+      <a href="#" class="scrollToTop">
+        <i class="fa fa-chevron-up"></i>
+     </a>
+	</div>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -112,10 +134,10 @@
               <dt>Address</dt>
               <dd>57/V/2 Jessore Road(S), Kolkata 700127</dd>
               
-              <dt>Mobile / Whatsapp</dt>
+              <dt><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> Mobile</dt>
               <dd><a href="tel:+919831346313" title="Call Me">+919831346313</a></dd>
                 
-              <dt>Skype</dt>
+              <dt><i class="fa fa-skype fa-lg" aria-hidden="true"></i> Skype</dt>
               <dd><a href="skype:amitrudra83?call">amitrudra83</a></dd>
               
             </dl>
@@ -139,37 +161,57 @@
         </div>
         
         
-        <div class="col-md-4">
+        <div class="col-md-3">
             <dl class="dl-horizontal">
-              <dt>Github</dt>
+              <dt><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></dt>
               <dd><a href="https://www.github.com/amitrudra" target="_blank">github.com/amitrudra</a></dd>
             </dl>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-3">
             <dl class="dl-horizontal">
-              <dt>DeviantArt</dt>
+              <dt><i class="fa fa-deviantart fa-2x" aria-hidden="true"></i></dt>
               <dd><a href="https://amitrudra.deviantart.com/gallery/" target="_blank">amitrudra83</a></dd>
             </dl>
         </div>
+        
           
-          <div class="col-md-4">
+          <div class="col-md-3">
             <dl class="dl-horizontal">
-              <dt>Linkedin</dt>
+              <dt><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></dt>
                 <dd><a href="https://www.linkedin.com/in/amit-rudra-97720813/" target="_blank">amitrudra83</a></dd>
             </dl>
         </div>
-          
+        
+        
+        <div class="col-md-3">
+            <dl class="dl-horizontal">
+              <dt><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></dt>
+                <dd><a href="https://www.youtube.com/channel/UC8i0eDiEWA8_JF6ShzpkmIA" target="_blank">WebTech</a></dd>
+            </dl>
+        </div>
+         
         
       </div>
       
       <div class="starter-template">
-        <a href="https://docs.google.com/document/d/1vGlgJrJjnClezIBtkdYSzQGWuTx369Sx28eJH_CGJPg" target="_blank" class="btn btn-primary btn-lg">Download My Resume</a>
+        <a href="https://docs.google.com/document/d/1vGlgJrJjnClezIBtkdYSzQGWuTx369Sx28eJH_CGJPg" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-file fa-lg" aria-hidden="true"></i>
+ Download Resume</a>
+      </div>
+      
+      <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+      <p>&nbsp;</p>
+      <p>I am a qualified and high performing individual with excellent professional and technical skills achieved via rich cross-functional exposure across the industry. I am an innovative thinker, able to apply analysis and creativity to problem solving. I am a highly personable, self-motivated and diligent individual with flexibility to adapt to new situations. I am in search of a professional environment, where lots of opportunities are in waiting. My work experience encompasses in-depth UI programming concepts with out-of-the-box graphic designing.</p>
+
+    <p>As a high performing UI/UX Designer &amp; development for more than 10 years my core competencies include</p></div>
+    <div class="col-md-3"><img src="images/skill.png" class="img-responsive" /></div>
+    <div class="col-md-2"></div>
       </div>
         
       <dig class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <dl class="dl-horizontal">
               <dt><h3>What I do</h3></dt>
               <dd>&nbsp;</dd>
@@ -184,7 +226,7 @@
 
         </div>
           
-        <div class="col-md-5">
+        <div class="col-md-6">
             
           <dl class="dl-horizontal">
               
@@ -203,7 +245,6 @@
           </dl>
         </div>
           
-        <div class="col-md-1"></div>
       </dig>
       
       
@@ -376,7 +417,63 @@
             </div>
           </div>
       </div>
+      </div>
       
+      <div class="clearfix">
+        <div class="starter-template">
+          <h2>Graphic Design</h2>
+        </div>
+      
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          
+          <!--<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>-->
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/banner-logo.png" class="img-responsive" alt="Logo Design" width="1400" height="702">
+            <div class="carousel-caption">
+              <h3>&nbsp;</h3>
+              <p>&nbsp;</p>
+            </div>      
+          </div>
+    
+          <!--<div class="item">
+            <img src="images/banner-logo.png" class="img-responsive" alt="Logo Design" width="1400" height="702">
+            <div class="carousel-caption">
+              <h3>&nbsp;</h3>
+              <p>&nbsp;</p>
+            </div>      
+          </div>
+        
+          <div class="item">
+            <img src="images/banner-logo.png" class="img-responsive" alt="Logo Design" width="1400" height="702">
+            <div class="carousel-caption">
+              <h3>&nbsp;</h3>
+              <p>&nbsp;</p>
+            </div>      
+          </div>-->
+          
+        </div>
+    
+        <!-- Left and right controls -->
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>-->
+        
+          </div>
+      </div>
+
       <div class="container" id="contact">
         <div class="starter-template">
           <h2>Contact me</h2>
@@ -386,7 +483,7 @@
           <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-            <form class="form" method="POST" name="contactform" action="http://interglobal.co.in/project/github_files/contact-form-handler.php"> 
+            <form class="form" method="POST" name="contactform" action="http://bristirealtech.com/github_files/contact-form-handler.php"> 
               <div class="form-group">
                 <label for="exampleInputName2" class="text-left">Name</label>
                 <input type="text" name="name" class="form-control" id="exampleInputName2" placeholder="Enter your name here">
@@ -412,11 +509,6 @@
             <div class="col-md-3"></div>
           </div>
       </div>
-      
-      
-      
-      </div>
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -430,6 +522,7 @@
     
     <script src="js/plugins.js" type="text/javascript"></script> 
 		<script src="js/carousel.js" type="text/javascript"></script> 
+        <script src="js/jquery.scrollUp.min.js"></script>
     <script>
         AI.init();
     </script>
@@ -443,5 +536,6 @@
     frmvalidator.addValidation("email","req","Please provide your email");
     frmvalidator.addValidation("email","email","Please enter a valid email address"); 
     </script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
