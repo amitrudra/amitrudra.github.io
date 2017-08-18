@@ -10,6 +10,4 @@ User-agent: SiteExplorer
 Disallow: /
 User-agent: ia_archiver
 Disallow: /
-sitemap: https://www.amitrudra.github.io/sitemap.html
 sitemap: https://www.amitrudra.github.io/sitemap.xml
-
