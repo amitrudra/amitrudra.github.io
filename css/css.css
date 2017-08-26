@@ -183,6 +183,9 @@ figure{margin:0!important}
 	.carousel-caption {
 	  display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
 	}
+	.pf-center-icons dl {
+		text-align: center;
+	}
 }
 
 .my-information .lead {
