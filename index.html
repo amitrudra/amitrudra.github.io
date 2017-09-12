@@ -24,7 +24,7 @@
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="js/ie-emulation-modes-warning.js"></script>-->
     
     <style>
 		@import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -448,7 +448,7 @@
           </div>
           
           <div class="item">
-            <img src="images/banner-logo.png" class="img-responsive" alt="Logo Design" width="1400" height="702">
+            <img src="images/banner-text.jpg" class="img-responsive" alt="Design" width="1400" height="702">
             <div class="carousel-caption">
               <h3>&nbsp;</h3>
               <p>&nbsp;</p>
@@ -456,7 +456,7 @@
           </div>
           
           <div class="item">
-            <img src="images/banner-logo.png" class="img-responsive" alt="Logo Design" width="1400" height="702">
+            <img src="images/banner-text2.jpg" class="img-responsive" alt="Design" width="1400" height="702">
             <div class="carousel-caption">
               <h3>&nbsp;</h3>
               <p>&nbsp;</p>
@@ -483,7 +483,7 @@
           <p class="lead">Let's build something together! Or <a href="mailto:amitrudra83@gmail.com">email</a> me if you have any other questions.</p>
           </div>
           
-          <div class="row">
+          <!--<div class="row">
           
             <div class="col-md-4">
                 <dl class="dl-horizontal">
@@ -517,7 +517,53 @@
               <button type="submit" class="btn btn-default">Send</button>
             </form>            
             </div>
-          </div>
+          </div>-->
+          
+          <div class="wrapper">
+              <div class="company-info">
+                <dl class="dl-horizontal">
+                  <dt>Email</dt>
+                  <dd>amitrudra83@gmail.com</dd>
+                  
+                  <dt><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> Mobile</dt>
+                  <dd><a href="tel:+919831346313" title="Call Me">+919831346313</a></dd>
+                    
+                  <dt><i class="fa fa-skype fa-lg" aria-hidden="true"></i> Skype</dt>
+                  <dd><a href="skype:amitrudra83?call">amitrudra83</a></dd>
+                  
+                </dl>
+              </div>
+              <div class="contact">
+                <h3>Email Us</h3>
+                <div class="alert">Your message has been sent</div>
+                <form id="contactForm">
+                  <p>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" required>
+                  </p>
+                  <p>
+                    <label>Company</label>
+                    <input type="text" name="company" id="company">
+                  </p>
+                  <p>
+                    <label>Email Address</label>
+                    <input type="email" name="email" id="email" required>
+                  </p>
+                  <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                  </p>
+                  <p class="full">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" id="message"></textarea>
+                  </p>
+                  <p class="full">
+                    <button type="submit">Submit</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          
       </div>
 
       <footer class="footer">
@@ -546,11 +592,16 @@
     // Code for validating the form
     // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
     // for details
-    var frmvalidator  = new Validator("contactform");
-    frmvalidator.addValidation("name","req","Please provide your name"); 
-    frmvalidator.addValidation("email","req","Please provide your email");
-    frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+    
+    //var frmvalidator  = new Validator("contactform");
+    //frmvalidator.addValidation("name","req","Please provide your name"); 
+    //frmvalidator.addValidation("email","req","Please provide your email");
+    //frmvalidator.addValidation("email","email","Please enter a valid email address");
+        
+        
     </script>
     <script src="js/custom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

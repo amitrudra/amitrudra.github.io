@@ -40,11 +40,13 @@ jQuery(window).load(function() { // makes sure the whole site is loaded
   });
 
 /* --------- One Page Navigation -------- */
-	$('#nav-menu').onePageNav({
+    
+	/*$('#nav-menu').onePageNav({
 	    currentClass: 'active',
 	    scrollSpeed: 500,
 	    easing: 'linear'
-	});
+	});*/
+    
 
 /* ---------- Wow Js ---------- */
 var wow = new WOW(
@@ -193,8 +195,6 @@ $( '#goll-slider' ).sliderPro({
         }
 	}
 });
-
-
 });
 
 
